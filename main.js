@@ -9,9 +9,10 @@ function createWindow () {
     height: 600,
   })
 
+  
   // and load the index.html of the app.
-  mainWindow.loadUrl('https://coda.io/')
-
+  mainWindow.loadURL('https://coda.io/docs')
+  mainWindow.menuBarVisible=false // tunr of menu bar
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
