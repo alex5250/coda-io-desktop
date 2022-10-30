@@ -24,9 +24,10 @@ def get_dir_with_app():
 pass
 
 def perpare_installer():
-    input=open("installer.iss","r").read()
+    input_string=open("installer.iss","r").read()
     print(str(pathlib.Path().resolve()))
-    input.replace("{path}",str(pathlib.Path().resolve()))
+    input_string.replace("_path_",str(pathlib.Path().resolve()))
+    open("installer_build.iss","w").write(input_string)
 
     
 
@@ -50,7 +51,7 @@ pass
 def debug():
     run('git clone https://github.com/alex5250/coda-io-desktop.git')
     os.chdir('./coda-io-desktop')
-    #perpare_installer()
+    perpare_installer()
 pass
 
 #main()
