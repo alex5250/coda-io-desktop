@@ -1,6 +1,8 @@
 # coda-io-desktop
 Unofficial Electron based coda io app
-Screenshots
+Screenshots:
+|<img width="837" alt="app" src="https://user-images.githubusercontent.com/20460747/198901124-7a357abd-3976-40cd-a23f-3a45656edcf7.png">
+
 
 
 
