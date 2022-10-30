@@ -1,6 +1,7 @@
 import os,subprocess
 import platform
 import shutil
+import pathlib
 
 def run(command:str):
     output=subprocess.run(command,shell=True, check=True)
@@ -23,6 +24,10 @@ def get_dir_with_app():
 pass
 
 def perpare_installer():
+    input=open("installer.iss","r").read()
+    print(str(pathlib.Path().resolve()))
+    input.replace("{path}",str(pathlib.Path().resolve()))
+
     
 
 def main():
@@ -42,4 +47,11 @@ def main():
 
 pass
 
-main()
+def debug():
+    run('git clone https://github.com/alex5250/coda-io-desktop.git')
+    os.chdir('./coda-io-desktop')
+    #perpare_installer()
+pass
+
+#main()
+debug()
