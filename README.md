@@ -2,6 +2,7 @@
 Unofficial Electron based coda io app
 Screenshots:
 |<img width="837" alt="app" src="https://user-images.githubusercontent.com/20460747/198901124-7a357abd-3976-40cd-a23f-3a45656edcf7.png">
+<img width="410" alt="image" src="https://user-images.githubusercontent.com/20460747/198901856-70abd2e7-6257-433e-858b-9953208a1d95.png">
 
 
 
