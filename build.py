@@ -26,8 +26,8 @@ pass
 def perpare_installer():
     input_string=open("installer.iss","r").read()
     print(str(pathlib.Path().resolve()))
-    input_string.replace("_path_",str(pathlib.Path().resolve()))
-    open("installer_build.iss","w").write(input_string)
+    output=input_string.replace("_path_",str(pathlib.Path().resolve()))
+    open("installer_build.iss","w").write(output)
 
     
 
