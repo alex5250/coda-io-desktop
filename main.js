@@ -1,4 +1,4 @@
-// Modules to control application life and create native browser window
+
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
@@ -7,11 +7,14 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    title:'Coda',
+    icon: __dirname + '/icon.ico',
   })
 
   
   // and load the index.html of the app.
-  mainWindow.loadURL('https://coda.io/docs')
+  mainWindow.loadURL('https://coda.io/docs',{userAgent: 'Chrome'})
+
   mainWindow.menuBarVisible=false // tunr of menu bar
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
